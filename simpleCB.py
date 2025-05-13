@@ -70,14 +70,41 @@ if sec == "1":
     else:
         pass
 
-
-
-
-"""elif sec == "2":
+elif sec == "2":
     print("You have selected Orders!")
+    FAQ = ["a. How can I add a new order?", "b. How can I monitored the order has been delivered or not?"]
+    print("\n".join(FAQ))
+    FAQ_sec2= input("How can I help you? (Type a or b): ")
+    if FAQ_sec2 == "a":
+        print("To add a new order, 1st go to the orders section, you'll see a button \"Add Order\" on the top right corner, click on it, now you're on Point of Sale section. Choose a product from the menu, add to cart all products, then you'll see a sale receipt on left side, select method, add cash amount, and then click on \"Place Oder\" button. The order has been added.")
+    elif FAQ_sec2 == "b":
+        print("To monitor the order has been delivered or not, 1st go to the Orders page, you'll see a status column on that page. All orders are mentioned and there status too that the order has been delivered or pending or cancelled. You can also update the status when the order has been delivered or cancelled.")
+    else:
+        pass
+
 elif sec == "3":
     print("You have selected POS!")
+    FAQ = "a. How can I manage discounts?"
+    print(FAQ)
+    FAQ_sec3= input("How can I help you? (Type a): ")
+    if FAQ_sec3 == "a":
+        print("To manage discounts, go to the POS section, on the top right corner, you'll see a \"Manage Discounts\" button. Click on it, adjust discounts, and then click on \"Submit\" button to save the changes.")
+    else:
+        pass
+
+
 elif sec == "4":
     print("You have selected Branches!")
+    FAQ = ["a. How can I add a new branch?", "b. How can I switch into another branch?", "c. What is the purpose of \"Sync Mneu\" button on Branches page?", "d. How can I delete a branch?"]
+    print("\n".join(FAQ))
+    FAQ_sec4= input("How can I help you? (Type a, b, c or d): ")
+    if FAQ_sec4 == "a":
+        print("To add a new branch, 1st go to the branches section, you'll see a button \"Add Branch\" on the top right side, click on it. Enter branch name, select city and select area and then click on \"Submit\" button.")
+    elif FAQ_sec4 == "b":
+        print("To switch into another branch, 1st go to the branches section, you'll see a button \"Set Current Branch\" on the top right side, click on it. The list of all branches will be shown. Choose the branch from the list and then click on \"Save\" button.")
+    elif FAQ_sec4 == "c":
+        print("The \"Sync Menu\" button is used to synchronize the menu of your restaurant with the selected branch.")
+    elif FAQ_sec4 == "d":
+        print("To delete a branch, 1st go to the branches section, all branches of your restaurant will be shown. In action column, you will see a \"Delete\" button, click on it. It'll ask confirmation, click on \"Yes, delete branch\". Branch has been deleted.")
 else:
-    pass"""
+    pass

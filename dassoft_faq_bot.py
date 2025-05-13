@@ -32,7 +32,7 @@ if section == "Dashboard":
         if question == "How can I add tax & delivery charges?":
             st.success("Go to Dashboard > Branch page. Add tax & delivery charges in the respective section and click 'Update' at the bottom-right.")
         elif question == "How can I set or update the address of my restaurant branch?":
-            st.info("Go to Dashboard > Branch page. Add branch name, city, area, and click 'Update' at the bottom-right.")
+            st.success("Go to Dashboard > Branch page. Add branch name, city, area, and click 'Update' at the bottom-right.")
         elif question == "I want to update opening & closing time of my restaurant, please guide me?":
             st.success("Go to Dashboard > Branch page. Set opening & closing times and click 'Update' at the bottom-right.")
 
@@ -45,7 +45,7 @@ if section == "Dashboard":
         if question == "How can I add a new product?":
             st.success("Go to Dashboard > Product page. Click 'Add Products and Category', choose or create category, then add product.")
         elif question == "How can I update the price of a product?":
-            st.info("Go to Dashboard > Product page. Select product, update price, and click 'Update'.")
+            st.success("Go to Dashboard > Product page. Select product, update price, and click 'Update'.")
         elif question == "How can I delete a product?":
             st.success("Go to Dashboard > Product page. Click the bin icon next to a product, confirm deletion.")
 
@@ -59,11 +59,42 @@ if section == "Dashboard":
         if question == "How can I add a new table?":
             st.success("Go to Dashboard > Table page. Click 'Add Table', set number of seats, and click 'Add Table'.")
         elif question == "How can I update the status of a table?":
-            st.info("Go to Dashboard > Table page. Select table, update status, and click 'Update'.")
+            st.success("Go to Dashboard > Table page. Select table, update status, and click 'Update'.")
         elif question == "What is the purpose of barcode on the table?":
             st.success("Barcodes allow customers to scan and place orders directly, without a waiter.")
         elif question == "How can I delete a table?":
             st.success("Go to Dashboard > Table page. Select a table, click 'Delete', confirm when prompted.")
 
-elif section in ["Orders", "POS", "Branches"]:
-    st.warning(f"FAQ section for **{section}** is under development.")
+elif section == "Orders":
+    question = st.radio("How can I help you?", [
+            "How can I add a new order?",
+            "How can I monitored the order has been delivered or not?"
+        ])
+    if question == "How can I add a new order?":
+        st.success("To add a new order, 1st go to the orders section, you'll see a button \"Add Order\" on the top right corner, click on it, now you're on Point of Sale section. Choose a product from the menu, add to cart all products, then you'll see a sale receipt on left side, select method, add cash amount, and then click on \"Place Oder\" button. The order has been added.")
+    elif question == "How can I monitored the order has been delivered or not?":
+        st.success("To monitor the order has been delivered or not, 1st go to the Orders page, you'll see a status column on that page. All orders are mentioned and there status too that the order has been delivered or pending or cancelled. You can also update the status when the order has been delivered or cancelled.")
+
+elif section == "POS":
+    st.radio("How can I help you?", [
+            "How can I manage discounts?"
+    ])
+    st.success("To manage discounts, go to the POS section, on the top right corner, you'll see a \"Manage Discounts\" button. Click on it, adjust discounts, and then click on \"Submit\" button to save the changes.")
+
+
+elif section == "Branches":
+    question = st.radio("How can I help you?", [
+            "How can I add a new branch?",
+            "How can I switch into another branch?",
+            "What is the purpose of \"Sync Mneu\" button on Branches page?",
+            "How can I delete a branch?"
+        ])
+    if question == "How can I add a new branch?":
+        st.success("To add a new branch, 1st go to the branches section, you'll see a button \"Add Branch\" on the top right side, click on it. Enter branch name, select city and select area and then click on \"Submit\" button.")
+    elif question == "How can I switch into another branch?":
+        st.success("To switch into another branch, 1st go to the branches section, you'll see a button \"Set Current Branch\" on the top right side, click on it. The list of all branches will be shown. Choose the branch from the list and then click on \"Save\" button.")
+    elif question == "What is the purpose of \"Sync Mneu\" button on Branches page?":
+        st.info("The \"Sync Menu\" button is used to synchronize the menu of your restaurant with the selected branch.")
+    elif question == "How can I delete a branch?":
+        st.success("To delete a branch, 1st go to the branches section, all branches of your restaurant will be shown. In action column, you will see a \"Delete\" button, click on it. It'll ask confirmation, click on \"Yes, delete branch\". Branch has been deleted.")
+
