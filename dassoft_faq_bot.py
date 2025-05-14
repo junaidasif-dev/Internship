@@ -61,7 +61,7 @@ if section == "Dashboard":
         elif question == "How can I update the status of a table?":
             st.success("Go to Dashboard > Table page. Select table, update status, and click 'Update'.")
         elif question == "What is the purpose of barcode on the table?":
-            st.success("Barcodes allow customers to scan and place orders directly, without a waiter.")
+            st.info("Barcodes allow customers to scan and place orders directly, without a waiter.")
         elif question == "How can I delete a table?":
             st.success("Go to Dashboard > Table page. Select a table, click 'Delete', confirm when prompted.")
 
