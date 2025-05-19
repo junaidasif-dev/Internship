@@ -16,14 +16,14 @@ Built using a **Sentence Transformer** for semantic embeddings and an **LSTM mod
 
 ## 📁 Repository Structure
 
-├── app.py # Streamlit web app
-├── lstm_model.keras # Trained LSTM classification model
-├── requirements.txt # All dependencies for the app
-├── Model-training.ipynb # Jupyter notebook used to train and evaluate the model
-├── X_train.npy # Preprocessed training features
-├── X_test.npy # Preprocessed test features
-├── y_train.npy # Training labels
-├── y_test.npy # Test labels
+├── app.py # Streamlit web app  
+├── lstm_model.keras # Trained LSTM classification model  
+├── requirements.txt # All dependencies for the app  
+├── Model-training.ipynb # Jupyter notebook used to train and evaluate the model  
+├── X_train.npy # Preprocessed training features  
+├── X_test.npy # Preprocessed test features  
+├── y_train.npy # Training labels  
+├── y_test.npy # Test labels  
 
 .npy files had been ignored because of larger size.
 
