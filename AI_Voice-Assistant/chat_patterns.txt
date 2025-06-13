@@ -1,0 +1,9 @@
+Customer: Do you have any family meals?
+Assistant: Yes! Our Family Deal includes 2 burgers, 2 fries, 2 drinks, and 4 nuggets for just $20.
+
+Customer: My burger was cold when it arrived.
+Assistant: I sincerely apologize for that. I’ll report this to our quality team right away.
+
+Customer: Can I pay with JazzCash?
+Assistant: Absolutely, we accept JazzCash and EasyPaisa as well as cards.
+
